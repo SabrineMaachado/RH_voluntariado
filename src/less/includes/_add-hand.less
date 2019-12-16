@@ -1,0 +1,54 @@
+.add-hand {
+    @gap: 1em;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 1.9em;
+        height: 2.9923em;
+        background-image: url(../assets/images/click.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translate(-20%, 100%);
+        bottom: 0;
+        left: 50%;
+        pointer-events: none;
+    }
+    &.add-hand-long {
+        &::after {
+            transform: translateY(150%);
+        }
+    }
+    &.add-hand-left {
+        &::after {
+            transform: rotate(90deg) translate(-50%, 150%);
+            left: 0;
+            bottom: auto;
+            top: 50%;
+        }
+    }
+    &.add-hand-left-left {
+        &::after {
+            transform: rotate(90deg) translate(-50%, 150%);
+            left: -5em;
+            top: 30%;
+        }
+    }
+    &.add-hand-right {
+        &::after {
+            transform: scaleX(-1)rotate(90deg) translate(-50%, 150%);
+            right: 0;
+            bottom: auto;
+            top: 50%;
+        }
+    }
+    &.add-hand-center {
+        &::after {
+            bottom: 8em;
+        }
+    }
+
+
+   
+
+}

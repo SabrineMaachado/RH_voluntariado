@@ -1,0 +1,8 @@
+.menu#menu
+    .button
+    .body
+        ul
+            each link in menuLinks
+                li 
+                    a(href="#page-"+link.id)!=link.name
+            

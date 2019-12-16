@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-D06989F0F85DA4B1BDF3021B13DB07CE" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  <organizations default="ORG-CCAE6B9A4D0E787F4FD129C9693B7828">
+    <organization identifier="ORG-CCAE6B9A4D0E787F4FD129C9693B7828" structure="hierarchical">
+      <title>Rh_Voluntariado</title>
+      <item identifier="ITEM-3718F35800EC3E144741C8B638EBF923" identifierref="RES-9F3039753495889A8A10FE5A0B2FFBF6" isvisible="true">
+        <title>Rh_Voluntariado</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource href="index.html" identifier="RES-9F3039753495889A8A10FE5A0B2FFBF6" adlcp:scormtype="sco" type="webcontent" />
+  </resources>
+</manifest>
+

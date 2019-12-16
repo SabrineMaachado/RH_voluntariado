@@ -1,0 +1,54 @@
+extends includes/_base.pug
+
+block styles
+    link(rel='stylesheet', href='css/make-slider.css')
+    link(rel='stylesheet', href='css/menu.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/quiz.css')
+
+block content
+    .bg-geral(style="background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 100%);width: 100%;height: 800%;position: absolute;")
+        each numero in [1,2,3,4,5,6,7,8]
+            .bg-image(id="page-"+numero)
+                .bg-custom
+                .transicao
+
+        //- each numero in [1,2,3,4,5,6,7,8]
+        //-     .transicao(class='transicao-'+numero)
+        //-         img(src="assets/images/fundo/transicao-"+numero+".png")
+
+    #fullpage.full-container
+        .navegacao
+        section#page-1.section01.sections.mr-height
+            .mr-size
+                include pages/page.1.pug
+        section#page-2.section02.sections.mr-height
+            .mr-size
+                include pages/page.2.pug
+        section#page-3.section03.sections.mr-height
+            .mr-size
+                include pages/page.3.pug
+        section#page-4.section04.sections.mr-height
+            .mr-size
+                include pages/page.4.pug
+        section#page-5.section05.sections.mr-height
+            .mr-size
+                include pages/page.5.pug
+        section#page-6.section06.sections.mr-height
+            .mr-size
+                include pages/page.6.pug
+        section#page-7.section07.sections.mr-height
+            .mr-size
+                include pages/page.7.pug
+        section#page-8.section08.sections.mr-height
+            .mr-size
+                include pages/page.8.pug
+    include includes/menu.pug 
+    include includes/_ajuda.pug
+
+block scripts 
+    script(src="js/SCORM_API_wrapper.js")
+    script(src="js/make-slider.js")
+    script(src="js/makeresize.js")
+    script(src="js/quiz.js")
+    script(src="js/main.js") 

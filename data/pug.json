@@ -1,0 +1,56 @@
+{
+    "menuLinks": [
+        {
+            "id": 3,
+            "name": "Infográfico"
+        },
+        {
+            "id": 4,
+            "name": "<i> One Page</i>"
+        },
+        {
+            "id": 5,
+            "name": "<i> Podcast</i>"
+        },
+        {
+            "id": 6,
+            "name": "<i> Quizz </i>"
+        },
+        {
+            "id": 7,
+            "name": "<i>Videotalking</i>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "1. Um quiz é um jogo de perguntas e respostas pensado para desafiar o participante por meio de elementos de gamificação. Sua finalidade é:              ",
+            "alternatives": [
+                "a) Aferir/reforçar o aprendizado e proporcionar ao participante uma autorreflexão sobre seu processo de aprendizagem.  ",
+                "b) Avaliar a pré-disposição de aplicação (saber e querer fazer) de um determinado conteúdo aprendido.",
+                "c) Coletar feedback sobre o aprendizado dos participantes."
+            ],
+            "answer": 0,
+            "answerText": "a"
+        },
+        {
+            "question": "2. Geralmente um quiz possui uma estrutura bem clara, sendo: enunciado, alternativas de respostas, ______________ estruturado e, ao final é apresentado o aproveitamento Individual na atividade.",
+            "alternatives": [
+                "a) Feedback.",
+                "b) Resultado.",
+                "c) Rendimento. "
+            ],
+            "answer": 2,
+            "answerText": "c"
+        },
+        {
+            "question": "3. Classifique as frases abaixo como verdadeiras (V) ou falsas (F):<br><br> (  ) A autonomia deve existir, mas as pessoas precisam ser responsabilizadas pelo que fazem.<br> (  ) A cooperação deve estar acima da competição sempre, ainda que a competitividade exista em alguma medida.<br> (  ) Conversas de <i>feedback</i> são uma poderosa ferramenta de desenvolvimento. <br><br>Qual a sequência correta?",
+            "alternatives": [
+                "a) 2,1,3,5 e 4.",
+                "b) 1,3,2,5 e 4. ",
+                "c) 3,1,2, 4 e 5"
+            ],
+            "answer": 2,
+            "answerText": "c"
+        }
+    ]
+}

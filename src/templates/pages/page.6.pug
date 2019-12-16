@@ -1,0 +1,30 @@
+img.estilosimgquis(data-aos='fade-right', data-aos-delay='800', src='assets/images/tela-6/txt6.png')
+#quiz-set.quiz-set.mr-size
+        each instance, index in quiz
+            .quiz(data-answer=instance.answer)
+                .title!=instance.question
+                .alternatives
+                    each alt in instance.alternatives
+                        .alternative
+                            span.bullet
+                            span.text!=alt
+                    button.quiz-submit Confirmar
+
+                .feedback.feedback-positive 
+                    .content
+                        h1 Parabéns!
+                        p Sua resposta está correta!
+                        button.continue.ms-next.quiz-btn Continuar
+
+                .feedback.feedback-negative
+                    .content
+                        h1 Ops! 
+                        p Infelizmente, essa não é a melhor alternativa neste caso. A resposta correta é #[strong!=instance.answerText].
+                        button.continue.ms-next.quiz-btn Continuar
+                            //div.quiz-end
+        .quiz-end
+            .feedback
+                .content
+                    h1.final Veja o proximo conteúdo.
+                        
+

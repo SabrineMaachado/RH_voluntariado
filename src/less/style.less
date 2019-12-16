@@ -1,0 +1,563 @@
+@corFundo: #eeeeee;
+@Verde: #009e60;
+
+* {
+  box-sizing: border-box;
+}
+
+@import "includes/ajuda";
+@import "includes/modal";
+
+html {
+  width     : 100%;
+  height    : 100%;
+  margin    : 0;
+  border    : 0;
+  padding   : 0;
+  top       : 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin : 0;
+  border : 0;
+  padding: 0;
+}
+
+a {
+  z-index: 1001;
+}
+
+.full-container {
+  position  : absolute;
+  margin    : 0;
+  border    : 0;
+  padding   : 0;
+  top       : 0;
+  height    : 100%;
+  width     : 100%;
+  overflow-x: 0;
+
+  .navegacao {
+    width          : 18px;
+    height         : 240px;
+    position       : fixed;
+    top            : 50%;
+    transform      : translateY(-50%);
+    right          : 1%;
+    margin-top     : 0px;
+    z-index        : 10000;
+    list-style-type: none;
+
+    li::after {
+      content      : '';
+      display      : block;
+      background   : white;
+      width        : 4px;
+      height       : 4px;
+      margin-left  : -10px;
+      margin-top   : 20px;
+      border-radius: 50%;
+      transition   : all 1s;
+    }
+
+    li:hover::after,
+    .active li::after {
+      transform: scale(3.5);
+    }
+  }
+
+  .sections {
+    position     : relative;
+    align-content: center; //margin: 0;
+    border       : 0;
+    padding      : 0; //overflow: hidden;
+
+    img:not(.default) {
+      height: 100%;
+      width : 100%;
+    }
+
+    display        : flex;
+    justify-content: center;
+  }
+
+  .estilosimg {
+    position      : absolute;
+    // margin-left: -7em;
+  }
+
+  .estilosimg2 {
+    position      : absolute;
+    // margin-left: -37em;
+    // margin-top : -1em;
+
+  }
+
+  a {
+    .pdf1 {
+      position: absolute;
+      width   : 26.5%;
+      height  : 15% !important;
+      top     : 79%;
+      left    : 76%;
+      z-index : 2;
+    }
+
+    .imgpdf1 {
+      position: absolute;
+      width   : 3.5%;
+      height  : 7% !important;
+      top     : 82.8%;
+      left    : 78%;
+      z-index : 2;
+    }
+
+    .pdf2 {
+      position: absolute;
+      width   : 56%;
+      height  : 10% !important;
+      top     : 48%;
+      left    : -17%;
+      z-index : 2;
+    }
+
+    .imgpdf2 {
+      position: absolute;
+      width   : 3.5%;
+      height  : 7% !important;
+      top     : 49.5%;
+      left    : 34%;
+      z-index : 2;
+    }
+  }
+
+  .estilosimgquis {
+        position: absolute;
+        top: -5em;
+        left: 0;
+  }
+
+  .estilosimglatd {
+    position     : absolute; //width: 75%;
+    //margin-left: 12.5%;
+
+  }
+
+  .estilosimglatd3 {
+      position: absolute;
+      top: 0em;
+      right: 1.5em;
+  }
+
+  .estilosimglate {
+    position: absolute;
+
+  }
+
+  .estilosimglate2 {
+    position     : absolute; //width: 75%;
+    //margin-left: 12.5%;
+    top          : 0;
+    //right      : -24%;
+  }
+
+  .estilosimglateimg {
+    position     : absolute; //width: 75%;
+    //margin-left: 12.5%;
+    top          : 0;
+    right        : -6%;
+  }
+
+  .estilosimg3 {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    top     : -3em;
+  }
+
+  .btninit {
+    z-index : 2;
+    width   : 26.2%;
+    height  : 6.4% !important;
+    position: absolute;
+    top     : 87.4%;
+    left    : 36.2%;
+  }
+
+  .efeito {
+    width: 100%;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+
+.hitarea {
+  position: absolute;
+  cursor  : pointer;
+  z-index : 9;
+  width   : 1em;
+  height  : 1em;
+}
+
+.hit-1 {
+  top   : 11.8em;
+  left  : 10em;
+  width : 11.4em;
+  height: 1.5em;
+}
+
+.hit-2 {
+  top   : 1.5em;
+  width : 8em;
+  height: 1.4em;
+  left  : 26em;
+}
+
+button {
+    position: absolute;
+    width: 9em;
+    height: 2.5em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    font-family:'Raleway', sans-serif;
+    background-color: #0000;
+}
+button:hover {
+    background-color: #fff2;
+}
+
+.buttonA {
+    margin-top: 28.5em;
+    margin-left: 3em;
+}
+.buttonB {
+    margin-top: 11.5em;
+    margin-left: 3.4em;
+}
+.buttonC {
+    margin-top: 17em;
+    margin-left: 37.9em;
+}
+
+.video {
+    width: 26em;
+    position: absolute;
+    top: 12em;
+    border: 10px solid #000;
+    border-radius: 10px;
+    z-index: 2;
+}
+.audio {
+    margin-top: 11.5em;
+    margin-left: 5.2em;
+}
+
+.tooltip {
+  position        : absolute;
+  background-color: #fff;
+  border-radius   : .5em;
+  padding         : .8em;
+  width           : 20em;
+  box-shadow      : 0.3em 0.3em 1em rgba(0, 0, 0, 0.5);
+  z-index         : 10;
+
+  img {
+    width: 100%;
+  }
+
+  &.add-close {
+    padding-right: 2.6em;
+
+    .modal-close {
+      z-index : 10;
+      cursor  : pointer;
+      content : '';
+      display : block;
+      position: absolute;
+      top     : 0.4em;
+      right   : 0.4em;
+      width   : 2em;
+      height  : 2em;
+    }
+
+    &:after {
+      cursor             : pointer;
+      content            : '';
+      display            : block;
+      position           : absolute;
+      top                : .4em;
+      right              : .4em;
+      width              : 2em;
+      height             : 2em;
+      background-image   : url(../assets/images/button-close-dark.png);
+      background-size    : contain;
+      background-position: center;
+      background-repeat  : no-repeat;
+    }
+  }
+
+  &.tip-1 {
+    width: 28em;
+    top  : 9em;
+    left : 5em;
+  }
+
+  &.tip-2 {
+    width: 30em;
+    top  : 3em;
+    left : 22em;
+  }
+
+  &.tip-3 {
+    padding: 3.2em;
+  }
+
+  .slider {
+    .tamBox {
+      width : 100%;
+      height: 10em;
+      left  : 0;
+    }
+
+    .button-next {
+      right: -37px;
+    }
+  }
+
+
+}
+
+
+#page-3_2 {
+  .text {
+    margin-top: 10em;
+    width     : 48em;
+    height    : 5.3em;
+  }
+
+  .dicas {
+    z-index        : 2;
+    margin-top     : 6em;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    .dica {
+      width     : 5em;
+      height    : 5em;
+      margin    : .5em;
+      transition: transform .4s;
+      cursor    : pointer;
+
+      &:hover {
+        transform: scale(1.1)
+      }
+    }
+  }
+
+  .slider {
+    width : 100%;
+    height: 10em;
+
+    .slides-holder {
+      width : 100%;
+      height: 100%;
+    }
+  }
+
+  #page-3_2_tip_1 {
+    .slider {
+      height: 14em;
+    }
+  }
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn2 {
+  cursor     : pointer;
+  margin-left: 52px;
+}
+
+.btn3 {
+  cursor     : pointer;
+  margin-left: 52px;
+}
+
+.relative {
+  position: relative;
+}
+
+
+.mr-size {
+  position: relative;
+}
+
+.bg-custom {
+  width              : 100%;
+  height             : 100%;
+  position           : absolute;
+  background-position: center;
+  background-size    : cover;
+}
+
+.loop(@i) when (@i>0) {
+  .loop(@i - 1);
+
+  #page-@{i} .bg-custom {
+    background-image: url(~'../assets/images/tela-@{i}/bg@{i}.jpg');
+  }
+
+  #page-@{i} .transicao {
+    background-image: url(~'../assets/images/fundo/t@{i}.png');
+  }
+}
+
+.loop(8);
+
+#page-1 .transicao {
+  background-size    : cover;
+  background-position: center bottom;
+}
+
+#page-2 .transicao {
+  display: none;
+}
+
+#page-3 .transicao {
+  background-size    : cover;
+  background-position: center bottom;
+}
+
+#page-4 .transicao {
+  display: none;
+}
+#page-5 .transicao {
+  background-size    : cover;
+  background-position: center bottom;
+}
+#page-6 .transicao {
+  display: none;
+}
+#page-7 .transicao {
+  background-size    : cover;
+  background-position: center bottom;
+}
+
+//-scrom /////////////////////////////////////////////////////////////
+
+
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+h1 {
+  margin-top  : 40px;
+  margin-left : 30px;
+  margin-right: 30px;
+  font-family : "Arial", sans-serif;
+  color       : #0072bb;
+  font-size   : 30px;
+  text-align: center
+}
+
+p {
+  margin-top  : 40px;
+  margin-left : 30px;
+  margin-right: 30px;
+  font-family : "Arial", sans-serif;
+  color       : #000;
+  font-size   : 22px;
+}
+
+
+.mouse {
+  z-index          : 10;
+  margin-top       : 575px;
+  border-radius    : 100px;
+  background-size  : 100% 200%;
+  -webkit-animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
+  animation        : colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
+}
+
+.mouse:before,
+.mouse:after {
+  content : "";
+  position: absolute;
+  top     : 0;
+  right   : 0;
+  bottom  : 0;
+  left    : 0;
+  margin  : auto;
+}
+
+.mouse:before {
+  width           : 46px;
+  height          : 82px;
+  background-color: #fff;
+  border-radius   : 100px;
+  border-color    : #0072bb
+}
+
+.mouse:after {
+  background-color : #0072bb;
+  width            : 10px;
+  height           : 10px;
+  border-radius    : 100%;
+  -webkit-animation: trackBallSlide 5s linear infinite;
+  animation        : trackBallSlide 5s linear infinite;
+}
+
+.bg-geral {
+  .bg-image {
+    width   : 100%;
+    height  : 100vh;
+    position: relative;
+  }
+
+  .transicao {
+    position: absolute;
+    width   : 100%;
+    height  : 100vh;
+  }
+
+  .transicao-1 {
+    top: -3%;
+  }
+
+  .transicao-2 {
+    position: absolute;
+    width   : 100%;
+    top     : 23%;
+  }
+
+  .transicao-3 {
+    position: absolute;
+    width   : 100%;
+    top     : 38%;
+  }
+
+  .transicao-4 {
+    position: absolute;
+    width   : 100%;
+    top     : 48%;
+  }
+
+  .transicao-6 {
+    position: absolute;
+    width   : 100%;
+    top     : 70.5%;
+  }
+
+  .transicao-7 {
+    position: absolute;
+    width   : 100%;
+    top     : 86%;
+  }
+
+}

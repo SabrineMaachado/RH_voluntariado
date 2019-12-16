@@ -1,0 +1,10 @@
+{
+    "plugins": ["@babel/plugin-transform-object-assign"],
+    "presets": [
+        ["@babel/env",{
+            "targets": {
+                "ie": "11"
+            }
+        }]
+    ]
+}
